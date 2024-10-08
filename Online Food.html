@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/project2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Online Food</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+
+
+            
+        }
+
+        #navbar {
+            display: flex;
+            position: relative;
+        }
+
+        #logo {
+            margin: 25px 35px;
+        }
+
+        #logo img {
+            height: 60px;
+            margin: 0px 6px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            padding: 10px 25px;
+            margin-top: 5px;
+            font-size: 1.8rem;
+            text-decoration: none;
+            color: white;
+            transition: all;
+            transition-duration: 0.5s;
+
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+            border-radius: 10px;
+
+        }
+
+        .item {
+            margin-top: 35px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 2px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 410px;
+        }
+
+        #home::before {
+            content: "";
+            background: url("back.jpeg") no-repeat center center/cover;
+            position: absolute;
+            height: 60%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+
+        }
+
+        #home h1 {
+            text-align: center;
+            color: white;
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: "Updock", cursive;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        .primary {
+            font-size: 3.8rem;
+            padding: 12px;
+            text-decoration: underline;
+            font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+           
+        }
+
+        .btn {
+            color: white;
+            background-color: brown;
+            border: 2px solid white;
+            font-size: 1.5rem;
+            padding: 2px 20px;
+            margin: 40px;
+            border-radius: 10px;
+            transition: all;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+          
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            transform: scale(2);
+            font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+            
+        }
+        .secondary
+        {
+            text-align: center;
+            font-size: 2.1rem;
+            text-decoration: underline;
+            font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+            
+        }
+        .centre{
+text-align: center;
+        }
+        #services 
+        {
+            display: flex;
+            margin: 34px;
+        }
+        #services .box{
+            border: 2px solid brown;
+            padding: 5px 15px;
+            margin: 2px 20px;
+            border-radius: 15px ;
+        }
+        #services .box p{
+            text-align: center;
+        }
+        #services .box img{
+            height: 160px;
+            padding: 5px;
+            display: block;
+            margin: auto;
+        }
+        .services-container h1{
+            margin-top: 10px;
+
+        }
+        .clients .clients-name img{
+            height: 200px;
+            width: 200px;
+            padding: 2px 15px;
+            margin: 20px;
+        }
+        .clients-name{
+            margin: 5px 17px;
+        }
+        .clients{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #clients-section{
+            background-color: antiquewhite;
+        }
+       #contact-details form input{
+        margin: 10px;
+        padding: 5px;
+        width: 300px;
+       }
+       #contact-details h1{
+        color: white;
+       }
+       #contact-details{
+        background-color: rgb(54, 52, 52);
+       }
+       #form-contact{
+        color: white;
+        font-size: 1.8rem;
+       }
+       input{
+        border: 2px solid white;
+        border-radius: 10px;
+       }
+            
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./Online Food_files/logo.png" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="http:">Home</a></li>
+            <li class="item"><a href="http://127.0.0.1:5500/project2.html#">Contact Us</a></li>
+            <li class="item"><a href="http://127.0.0.1:5500/project2.html#">About</a></li>
+            <li class="item"><a href="http://127.0.0.1:5500/project2.html#">Services</a></li>
+
+
+
+
+        </ul>
+
+
+
+    </nav>
+    <section id="home">
+        <h1 class="primary">Welcome to My online meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eos nihil esse aperiam voluptatem!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eos nihil esse aperiam voluptatem!</p>
+        <button class="btn" fdprocessedid="7w4i9h">Order Now</button>
+
+
+    </section>
+    <section class="services-container">
+        <h1 class="primary centre">Our Services</h1>
+        <div id="services">
+            <div class="box">
+              <img src="./Online Food_files/pizza.jpeg" alt="">
+                <h2 class="secondary centre">Food ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, temporibus similique. Iure doloribus
+                    tempore, nemo atque repudiandae rerum aperiam explicabo aspernatur, et quidem sint obcaecati.
+                    Sapiente fuga numquam velit adipisci molestias iusto ducimus nisi?</p>
+
+            </div>
+            <div class="box">
+              <img src="./Online Food_files/pizza.jpeg" alt="">
+                <h2 class="secondary centre">Bulk ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, temporibus similique. Iure doloribus
+                    tempore, nemo atque repudiandae rerum aperiam explicabo aspernatur, et quidem sint obcaecati.
+                    Sapiente fuga numquam velit adipisci molestias iusto ducimus nisi?</p>
+
+            </div>
+            <div class="box">
+              <img src="./Online Food_files/pizza.jpeg" alt="">
+                <h2 class="secondary centre">Fast Delivery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, temporibus similique. Iure doloribus
+                    tempore, nemo atque repudiandae rerum aperiam explicabo aspernatur, et quidem sint obcaecati.
+                    Sapiente fuga numquam velit adipisci molestias iusto ducimus nisi?</p>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+    <section id="clients-section">
+        <h1 class="primary centre">Our Clients</h1>
+        <div class="clients">
+            <div class="clients-name">
+                <img src="./Online Food_files/apple.png" alt="">
+
+
+            </div>
+            <div class="clients-name">
+                <img src="./Online Food_files/micro.png" alt="">
+
+
+            </div>
+            <div class="clients-name">
+                <img src="./Online Food_files/skype.jpeg" alt="">
+                <br>
+
+
+            </div>
+            <div class="clients-name">
+                <img src="./Online Food_files/insta.jpeg" alt="">
+
+
+            </div>
+            <div class="clients-name">
+                <img src="./Online Food_files/mongo.jpeg" alt="">
+
+
+
+
+        </div>
+    </div></section>
+    <section id="contact-details">
+        <h1 class="primary centre"> BOOK NOW</h1>
+
+
+        <div class="contacts centre" id="form-contact">
+
+            <form action="http://127.0.0.1:5500/project2.html">
+                
+               Name <input class="centre" type="text" placeholder="Enter you Name" fdprocessedid="w8uhen">
+               <br>
+               Email <input class="centre" type="email" placeholder="Enter your Email" fdprocessedid="xdj8n">
+               <br>
+               Contact NO.  <input class="centre" type="text" placeholder="Enter your contact" fdprocessedid="i47vp">
+               <br>
+               Address <input class="centre" type="text" placeholder="Enter your Address" fdprocessedid="jr5n5">
+
+            </form>
+            <button class="Centre btn " fdprocessedid="x532s">Submit</button>
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
